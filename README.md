@@ -106,4 +106,3 @@ Upload the PDF report, code, README, requirements, `results/`, and the two cours
 - BERT: Devlin et al. (2019), https://aclanthology.org/N19-1423/.
 - Libraries: scikit-learn, Gensim, PyTorch and Hugging Face Transformers.
 
-AI assistance was used to implement the code, run the experiments and draft the report. All reported measurements come from actual execution on the supplied datasets. The submitter should review the code, understand the experimental choices and comply with the course's independent-work and disclosure rules.
