@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "gensim": "4.4.0",
+    "transformers": "4.57.1",
+    "torch": "2.8.0+cu128"
+  },
+  "seed": 42
+}

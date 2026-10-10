@@ -1,0 +1,8 @@
+.venv/
+assets/
+checkpoints/
+__pycache__/
+*.pyc
+tmp/
+*.zip
+.DS_Store

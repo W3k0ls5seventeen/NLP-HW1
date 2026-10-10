@@ -1,0 +1,40 @@
+{
+  "rows": 11519,
+  "labels": [
+    "business",
+    "politics",
+    "sports"
+  ],
+  "duplicate_text_rows": 72,
+  "splits": {
+    "train": {
+      "rows": 9215,
+      "class_counts": {
+        "sports": 6911,
+        "politics": 1161,
+        "business": 1143
+      }
+    },
+    "validation": {
+      "rows": 1152,
+      "class_counts": {
+        "sports": 864,
+        "politics": 145,
+        "business": 143
+      }
+    },
+    "test": {
+      "rows": 1152,
+      "class_counts": {
+        "sports": 864,
+        "politics": 145,
+        "business": 143
+      }
+    }
+  },
+  "exact_text_overlap": {
+    "train_validation": 14,
+    "train_test": 10,
+    "validation_test": 1
+  }
+}

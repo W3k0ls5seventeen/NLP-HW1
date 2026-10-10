@@ -1,0 +1,182 @@
+{
+  "selected_C": 0.01,
+  "C_trials": [
+    {
+      "C": 0.01,
+      "accuracy": 0.9748263888888888,
+      "macro_f1": 0.9418276046454842,
+      "n_iter": [
+        34
+      ]
+    },
+    {
+      "C": 0.1,
+      "accuracy": 0.9722222222222222,
+      "macro_f1": 0.934888545223688,
+      "n_iter": [
+        63
+      ]
+    },
+    {
+      "C": 1.0,
+      "accuracy": 0.96875,
+      "macro_f1": 0.9272834370658934,
+      "n_iter": [
+        81
+      ]
+    },
+    {
+      "C": 10.0,
+      "accuracy": 0.96875,
+      "macro_f1": 0.9264599095286208,
+      "n_iter": [
+        127
+      ]
+    }
+  ],
+  "validation": {
+    "accuracy": 0.9748263888888888,
+    "macro_f1": 0.9418276046454842,
+    "confusion_matrix": [
+      [
+        131,
+        11,
+        1
+      ],
+      [
+        9,
+        134,
+        2
+      ],
+      [
+        4,
+        2,
+        858
+      ]
+    ],
+    "per_class": {
+      "business": {
+        "precision": 0.9097222222222222,
+        "recall": 0.916083916083916,
+        "f1-score": 0.9128919860627178,
+        "support": 143.0
+      },
+      "politics": {
+        "precision": 0.9115646258503401,
+        "recall": 0.9241379310344827,
+        "f1-score": 0.9178082191780822,
+        "support": 145.0
+      },
+      "sports": {
+        "precision": 0.9965156794425087,
+        "recall": 0.9930555555555556,
+        "f1-score": 0.9947826086956522,
+        "support": 864.0
+      },
+      "accuracy": 0.9748263888888888,
+      "macro avg": {
+        "precision": 0.9392675091716903,
+        "recall": 0.9444258008913181,
+        "f1-score": 0.9418276046454842,
+        "support": 1152.0
+      },
+      "weighted avg": {
+        "precision": 0.9750492148996569,
+        "recall": 0.9748263888888888,
+        "f1-score": 0.9749287497403072,
+        "support": 1152.0
+      }
+    }
+  },
+  "test": {
+    "accuracy": 0.9817708333333334,
+    "macro_f1": 0.9543869574075102,
+    "confusion_matrix": [
+      [
+        135,
+        7,
+        1
+      ],
+      [
+        11,
+        134,
+        0
+      ],
+      [
+        2,
+        0,
+        862
+      ]
+    ],
+    "per_class": {
+      "business": {
+        "precision": 0.9121621621621622,
+        "recall": 0.9440559440559441,
+        "f1-score": 0.9278350515463918,
+        "support": 143.0
+      },
+      "politics": {
+        "precision": 0.950354609929078,
+        "recall": 0.9241379310344827,
+        "f1-score": 0.9370629370629371,
+        "support": 145.0
+      },
+      "sports": {
+        "precision": 0.9988412514484357,
+        "recall": 0.9976851851851852,
+        "f1-score": 0.998262883613202,
+        "support": 864.0
+      },
+      "accuracy": 0.9817708333333334,
+      "macro avg": {
+        "precision": 0.9537860078465586,
+        "recall": 0.9552930200918707,
+        "f1-score": 0.9543869574075102,
+        "support": 1152.0
+      },
+      "weighted avg": {
+        "precision": 0.9819786882641961,
+        "recall": 0.9817708333333334,
+        "f1-score": 0.9818174216033562,
+        "support": 1152.0
+      }
+    }
+  },
+  "dimension": 100,
+  "pooling": "occurrence-weighted mean of in-vocabulary tokens",
+  "corpus": "all 90000 AG News texts without labels",
+  "word2vec_config": {
+    "vector_size": 100,
+    "window": 5,
+    "min_count": 2,
+    "workers": 1,
+    "sg": 1,
+    "negative": 5,
+    "epochs": 5,
+    "seed": 42,
+    "sample": 0.001
+  },
+  "word2vec_hash": "CRC32",
+  "embedding_vocabulary_size": 37062,
+  "coverage": {
+    "train": {
+      "known_tokens": 5963450,
+      "total_tokens": 6126120,
+      "coverage": 0.9734464881523706,
+      "zero_vector_documents": 0
+    },
+    "validation": {
+      "known_tokens": 741522,
+      "total_tokens": 762425,
+      "coverage": 0.9725835328065056,
+      "zero_vector_documents": 0
+    },
+    "test": {
+      "known_tokens": 761274,
+      "total_tokens": 782173,
+      "coverage": 0.9732808470760305,
+      "zero_vector_documents": 0
+    }
+  },
+  "seconds": 47.30499720014632
+}

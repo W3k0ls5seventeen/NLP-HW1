@@ -1,0 +1,13 @@
+{
+  "glove": {
+    "url": "https://nlp.stanford.edu/data/glove.6B.zip",
+    "file": "glove.6B.100d.txt",
+    "sha256": "95dde4dfd627ab26608d33e76d1195ec059734bd29089ea52cadb08d07c64544"
+  },
+  "bert": {
+    "model_id": "google-bert/bert-base-uncased",
+    "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+    "delivery_url": "https://modelscope.cn/api/v1/models/AI-ModelScope/bert-base-uncased/repo?Revision=master&FilePath=model.safetensors",
+    "sha256": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3"
+  }
+}

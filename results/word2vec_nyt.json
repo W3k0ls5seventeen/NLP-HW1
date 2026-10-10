@@ -1,0 +1,182 @@
+{
+  "selected_C": 0.1,
+  "C_trials": [
+    {
+      "C": 0.01,
+      "accuracy": 0.9774305555555556,
+      "macro_f1": 0.9475382878588494,
+      "n_iter": [
+        32
+      ]
+    },
+    {
+      "C": 0.1,
+      "accuracy": 0.9791666666666666,
+      "macro_f1": 0.9511190254132135,
+      "n_iter": [
+        48
+      ]
+    },
+    {
+      "C": 1.0,
+      "accuracy": 0.9765625,
+      "macro_f1": 0.9449907816209248,
+      "n_iter": [
+        79
+      ]
+    },
+    {
+      "C": 10.0,
+      "accuracy": 0.9774305555555556,
+      "macro_f1": 0.9445129170921617,
+      "n_iter": [
+        126
+      ]
+    }
+  ],
+  "validation": {
+    "accuracy": 0.9791666666666666,
+    "macro_f1": 0.9511190254132135,
+    "confusion_matrix": [
+      [
+        131,
+        10,
+        2
+      ],
+      [
+        7,
+        136,
+        2
+      ],
+      [
+        1,
+        2,
+        861
+      ]
+    ],
+    "per_class": {
+      "business": {
+        "precision": 0.9424460431654677,
+        "recall": 0.916083916083916,
+        "f1-score": 0.9290780141843972,
+        "support": 143.0
+      },
+      "politics": {
+        "precision": 0.918918918918919,
+        "recall": 0.9379310344827586,
+        "f1-score": 0.9283276450511946,
+        "support": 145.0
+      },
+      "sports": {
+        "precision": 0.9953757225433526,
+        "recall": 0.9965277777777778,
+        "f1-score": 0.9959514170040485,
+        "support": 864.0
+      },
+      "accuracy": 0.9791666666666666,
+      "macro avg": {
+        "precision": 0.9522468948759131,
+        "recall": 0.9501809094481507,
+        "f1-score": 0.9511190254132135,
+        "support": 1152.0
+      },
+      "weighted avg": {
+        "precision": 0.9791819893171544,
+        "recall": 0.9791666666666666,
+        "f1-score": 0.9791386187953905,
+        "support": 1152.0
+      }
+    }
+  },
+  "test": {
+    "accuracy": 0.9887152777777778,
+    "macro_f1": 0.9718280472027271,
+    "confusion_matrix": [
+      [
+        137,
+        5,
+        1
+      ],
+      [
+        6,
+        139,
+        0
+      ],
+      [
+        1,
+        0,
+        863
+      ]
+    ],
+    "per_class": {
+      "business": {
+        "precision": 0.9513888888888888,
+        "recall": 0.958041958041958,
+        "f1-score": 0.9547038327526133,
+        "support": 143.0
+      },
+      "politics": {
+        "precision": 0.9652777777777778,
+        "recall": 0.9586206896551724,
+        "f1-score": 0.9619377162629758,
+        "support": 145.0
+      },
+      "sports": {
+        "precision": 0.9988425925925926,
+        "recall": 0.9988425925925926,
+        "f1-score": 0.9988425925925926,
+        "support": 864.0
+      },
+      "accuracy": 0.9887152777777778,
+      "macro avg": {
+        "precision": 0.9718364197530863,
+        "recall": 0.9718350800965743,
+        "f1-score": 0.9718280472027271,
+        "support": 1152.0
+      },
+      "weighted avg": {
+        "precision": 0.9887273341049383,
+        "recall": 0.9887152777777778,
+        "f1-score": 0.9887184174841624,
+        "support": 1152.0
+      }
+    }
+  },
+  "dimension": 100,
+  "pooling": "occurrence-weighted mean of in-vocabulary tokens",
+  "corpus": "NYT training split only",
+  "word2vec_config": {
+    "vector_size": 100,
+    "window": 5,
+    "min_count": 2,
+    "workers": 1,
+    "sg": 1,
+    "negative": 5,
+    "epochs": 5,
+    "seed": 42,
+    "sample": 0.001
+  },
+  "word2vec_hash": "CRC32",
+  "embedding_vocabulary_size": 43434,
+  "coverage": {
+    "train": {
+      "known_tokens": 6108533,
+      "total_tokens": 6126120,
+      "coverage": 0.997129178011531,
+      "zero_vector_documents": 0
+    },
+    "validation": {
+      "known_tokens": 756589,
+      "total_tokens": 762425,
+      "coverage": 0.9923454766042562,
+      "zero_vector_documents": 0
+    },
+    "test": {
+      "known_tokens": 776592,
+      "total_tokens": 782173,
+      "coverage": 0.9928647498699137,
+      "zero_vector_documents": 0
+    }
+  },
+  "seconds": 84.79180810018443
+}
